@@ -10,6 +10,9 @@
     <Footer />
 
     <WhatsAppFloat />
+
+    <!-- Floating Chat Assistant -->
+    <FloatingChat />
   </div>
 </template>
 
@@ -17,6 +20,7 @@
 import Navbar from "./components/layout/Navbar.vue";
 import Footer from "./components/layout/Footer.vue";
 import WhatsAppFloat from "./components/layout/WhatsAppFloat.vue";
+import FloatingChat from "./components/common/FloatingChat.vue";
 </script>
 
 <style scoped>
