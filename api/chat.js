@@ -43,7 +43,7 @@ export default async function handler(req, res) {
     // Initialize Gemini AI
     const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
     // Use valid model name - gemini-1.5-flash is faster and available
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash-lite" });
 
     // System context about Calon Hafiz
     const systemContext = `Kamu adalah asisten virtual dari Calon Hafiz Indonesia, platform tahfizh Al-Qur'an online terpercaya.

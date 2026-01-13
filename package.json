@@ -9,17 +9,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.5.13",
-    "vue-router": "^4.5.0",
+    "@google/generative-ai": "^0.24.1",
     "aos": "^2.3.4",
-    "@google/generative-ai": "^0.21.0"
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.2.1",
-    "vite": "^6.0.7",
-    "tailwindcss": "^4.0.0",
     "@tailwindcss/vite": "^4.0.0",
+    "@vitejs/plugin-vue": "^5.2.1",
     "flowbite": "^2.5.2",
-    "flowbite-vue": "^0.1.6"
+    "flowbite-vue": "^0.1.6",
+    "tailwindcss": "^4.0.0",
+    "vite": "^6.0.7"
   }
 }
