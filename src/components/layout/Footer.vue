@@ -37,7 +37,7 @@
           <div class="flex gap-4">
             <!-- Social Media Icons (Twitter/X placeholder for 'Instagram' slot just for variety or keep Instagram) -->
             <a
-              href="#"
+              href="https://www.instagram.com/calon_hafiz/"
               class="w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 flex items-center justify-center hover:bg-white hover:text-primary transition-all duration-300 group"
             >
               <i
@@ -143,8 +143,7 @@
                 <i class="fa-solid fa-location-dot"></i>
               </div>
               <span class="leading-relaxed"
-                >Jalan Adi Sucipto No 11-12, Mataram, Nusa Tenggara Barat,
-                83118</span
+                >bangka</span
               >
             </li>
             <li class="flex items-center gap-4 group">
@@ -161,7 +160,7 @@
               >
                 <i class="fa-solid fa-envelope"></i>
               </div>
-              <span>halo@calontahfidz.com</span>
+              <span>calontahfidz.com</span>
             </li>
           </ul>
         </div>
@@ -184,18 +183,14 @@ import { computed } from "vue";
 const currentYear = computed(() => new Date().getFullYear());
 
 const programLinks = [
-  { label: "Kelas Tahfidz Basic", to: "/kelas" },
-  { label: "Kelas Tahfidz Intermediate", to: "/kelas" },
-  { label: "Program Tahfidz Intensif", to: "/kelas" },
-  { label: "Kelas Tahsin & Tajwid", to: "/kelas" },
-  { label: "Kelas Anak-anak", to: "/kelas" },
+  { label: "Kelas Murojaah", to: "/kelas" },
+  { label: "Kelas Ziyadah Intensif", to: "/kelas" },
+  { label: "Kelas Ziyadah Reguler", to: "/kelas" },
 ];
 
 const usefulLinks = [
   { label: "Tentang Kami", to: "/tentang-kami", internal: true },
-  { label: "Syarat & Ketentuan", to: "#", internal: false },
-  { label: "Kebijakan Privasi", to: "#", internal: false },
-  { label: "Bantuan Santri", to: "#", internal: false },
-  { label: "Pusat Karir", to: "#", internal: false },
+  { label: "Kelas", to: "#", internal: false },
+  { label: "Tentang Kami", to: "#", internal: false },
 ];
 </script>

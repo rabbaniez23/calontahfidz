@@ -1,5 +1,8 @@
 <template>
   <div id="app" class="min-h-screen flex flex-col">
+    <!-- Dynamic Island Banner -->
+    <DynamicBanner />
+
     <Navbar />
 
     <!-- Add padding-top to account for fixed navbar -->
@@ -21,6 +24,7 @@ import Navbar from "./components/layout/Navbar.vue";
 import Footer from "./components/layout/Footer.vue";
 import WhatsAppFloat from "./components/layout/WhatsAppFloat.vue";
 import FloatingChat from "./components/common/FloatingChat.vue";
+import DynamicBanner from "./components/common/DynamicBanner.vue";
 </script>
 
 <style scoped>

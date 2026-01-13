@@ -12,7 +12,7 @@
     >
       <div
         v-if="isOpen"
-        class="mb-4 w-80 h-[400px] bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden border border-neutral-gray-light"
+        class="mb-4 w-[420px] h-[550px] bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden border border-neutral-gray-light"
       >
         <!-- Header -->
         <div
