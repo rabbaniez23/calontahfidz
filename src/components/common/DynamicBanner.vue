@@ -110,7 +110,7 @@
           <a
             :href="ctaLink"
             target="_blank"
-            class="shrink-0 ml-4 px-5 py-2.5 bg-primary text-white font-bold text-sm rounded-full hover:bg-primary-dark hover:scale-105 active:scale-95 transition-all shadow-lg hover:shadow-xl flex items-center gap-2 group"
+            class="hidden md:flex shrink-0 ml-4 px-5 py-2.5 bg-primary text-white font-bold text-sm rounded-full hover:bg-primary-dark hover:scale-105 active:scale-95 transition-all shadow-lg hover:shadow-xl items-center gap-2 group"
           >
             <span>Daftar</span>
             <svg
