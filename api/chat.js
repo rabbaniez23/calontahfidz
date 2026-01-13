@@ -112,6 +112,6 @@ Jika ditanya hal di luar topik Calon Hafiz, arahkan kembali ke layanan kami.`;
 
 // Configure for Vercel serverless
 export const config = {
-  runtime: "edge",
-  maxDuration: 30, // 30 seconds timeout
+  runtime: "nodejs",
+  maxDuration: 30,
 };
