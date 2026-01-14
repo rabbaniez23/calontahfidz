@@ -209,7 +209,7 @@ const isMobileMenuOpen = ref(false);
 const navLinks = [
   { to: "/", label: "Beranda" },
   { to: "/kelas", label: "Kelas" },
-  { to: "/tentang-kami", label: "Tentang Kami" },
+  // { to: "/tentang-kami", label: "Tentang Kami" },
 ];
 
 const isActive = (path) => {

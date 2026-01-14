@@ -49,12 +49,12 @@
             class="h-full bg-white rounded-[2.3rem] p-8 lg:p-10 flex flex-col items-start relative overflow-hidden group-hover:bg-white/90 transition-colors"
           >
             <!-- Icon -->
-            <div class="mb-8 relative">
+            <div class="mb-8 relative ">
               <div
                 class="absolute inset-0 bg-accent-gold/20 blur-xl rounded-full scale-0 group-hover:scale-150 transition-transform duration-500"
               ></div>
               <div
-                class="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#fff9c4] to-[#fff176] flex items-center justify-center text-accent-gold-dark shadow-inner shadow-white/50 relative z-10 group-hover:-translate-y-2 transition-transform duration-300"
+                class="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#fff9c4] to-[#fff176] flex items-center justify-center text-accent-gold-dark shadow-inner shadow-white/50 relative z-10 group-hover:-translate-y-2 transition-transform duration-300 "
               >
                 <svg
                   class="w-8 h-8 drop-shadow-sm"
