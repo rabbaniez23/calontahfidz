@@ -58,7 +58,7 @@
               </div>
             </div>
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+              src="./logo.jpeg"
               alt="Google"
               class="w-5 h-5 opacity-70"
             />

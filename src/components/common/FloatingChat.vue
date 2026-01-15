@@ -115,11 +115,10 @@
                   : 'bg-white text-neutral-text-dark rounded-bl-sm shadow-sm',
               ]"
             >
-              <p
+              <div
                 class="text-sm leading-relaxed whitespace-pre-wrap break-words"
-              >
-                {{ message.content }}
-              </p>
+                v-html="formatMessage(message.content)"
+              ></div>
               <p
                 :class="[
                   'text-xs mt-1',
@@ -161,7 +160,8 @@
               v-model="userInput"
               type="text"
               placeholder="Ketik pesan..."
-              class="flex-1 px-3 py-2 text-sm border border-neutral-gray-light rounded-full focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent min-w-0"
+              class="flex-1 px-3 py-2 border border-neutral-gray-light rounded-full focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent min-w-0"
+              style="font-size: 16px"
               :disabled="isLoading"
             />
             <button
@@ -256,6 +256,34 @@ const scrollToBottom = () => {
       messagesContainer.value.scrollTop = messagesContainer.value.scrollHeight;
     }
   });
+};
+
+const formatMessage = (text) => {
+  if (!text) return "";
+
+  // Escape HTML to prevent XSS
+  let formatted = text
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+
+  // Parse markdown-style formatting
+  // Bold: **text** or __text__
+  formatted = formatted.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+  formatted = formatted.replace(/__(.+?)__/g, "<strong>$1</strong>");
+
+  // Italic: *text* or _text_
+  formatted = formatted.replace(/\*(.+?)\*/g, "<em>$1</em>");
+  formatted = formatted.replace(/_(.+?)_/g, "<em>$1</em>");
+
+  // Line breaks
+  formatted = formatted.replace(/\n/g, "<br>");
+
+  // Lists (simple bullet points)
+  formatted = formatted.replace(/^- (.+)$/gm, "<li>$1</li>");
+  formatted = formatted.replace(/(<li>.*<\/li>\n?)+/g, "<ul>$&</ul>");
+
+  return formatted;
 };
 
 const formatTime = () => {
