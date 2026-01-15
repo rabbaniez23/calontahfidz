@@ -1,6 +1,6 @@
 <template>
   <!-- Floating Chat Button -->
-  <div class="fixed bottom-6 left-4 md:left-6 z-50">
+  <div class="fixed bottom-4 left-4 md:bottom-6 md:left-6 z-50">
     <!-- Chat Widget (when open) -->
     <transition
       enter-active-class="transition duration-300 ease-out"
@@ -14,21 +14,21 @@
         v-if="isOpen"
         class="mb-4 bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden border border-neutral-gray-light"
         :class="[
-          'w-[calc(100vw-2rem)] max-w-[420px]',
-          'h-[calc(100vh-10rem)] max-h-[600px]',
-          'md:w-[420px] md:h-[550px]',
+          'w-[min(90vw,380px)]',
+          'h-[min(70vh,450px)]',
+          'md:w-[380px] md:h-[450px]',
         ]"
       >
         <!-- Header -->
         <div
-          class="gradient-primary text-white p-4 flex items-center justify-between shrink-0"
+          class="gradient-primary text-white p-3 flex items-center justify-between shrink-0"
         >
-          <div class="flex items-center gap-3 min-w-0">
+          <div class="flex items-center gap-2 min-w-0 flex-1">
             <div
-              class="w-10 h-10 bg-white rounded-full flex items-center justify-center shrink-0"
+              class="w-9 h-9 bg-white rounded-full flex items-center justify-center shrink-0"
             >
               <svg
-                class="w-6 h-6 text-primary"
+                class="w-5 h-5 text-primary"
                 fill="currentColor"
                 viewBox="0 0 20 20"
               >
@@ -41,9 +41,7 @@
               </svg>
             </div>
             <div class="min-w-0 flex-1">
-              <h3 class="font-bold text-base md:text-lg truncate">
-                Chat Assistant
-              </h3>
+              <h3 class="font-bold text-base truncate">Chat Assistant</h3>
               <p class="text-xs opacity-90 truncate">
                 Tanya apapun tentang kami
               </p>
@@ -51,7 +49,7 @@
           </div>
           <button
             @click="toggleChat"
-            class="text-white hover:bg-white/20 rounded-full p-2 transition-colors shrink-0"
+            class="text-white hover:bg-white/20 rounded-full p-1.5 transition-colors shrink-0 ml-2"
           >
             <svg
               class="w-5 h-5"
@@ -72,15 +70,15 @@
         <!-- Messages Area -->
         <div
           ref="messagesContainer"
-          class="flex-1 overflow-y-auto p-4 space-y-4 bg-neutral-off-white min-h-0"
+          class="flex-1 overflow-y-auto p-3 space-y-3 bg-neutral-off-white min-h-0"
         >
           <!-- Welcome Message -->
-          <div v-if="messages.length === 0" class="text-center py-8">
+          <div v-if="messages.length === 0" class="text-center py-6">
             <div
-              class="w-16 h-16 bg-primary-light rounded-full flex items-center justify-center mx-auto mb-4"
+              class="w-14 h-14 bg-primary-light rounded-full flex items-center justify-center mx-auto mb-3"
             >
               <svg
-                class="w-8 h-8 text-primary"
+                class="w-7 h-7 text-primary"
                 fill="currentColor"
                 viewBox="0 0 20 20"
               >
@@ -91,10 +89,10 @@
                 />
               </svg>
             </div>
-            <p class="text-neutral-text-dark font-medium">
+            <p class="text-neutral-text-dark font-medium text-sm">
               Halo! Ada yang bisa kami bantu?
             </p>
-            <p class="text-sm text-neutral-text-dark opacity-70 mt-2 px-4">
+            <p class="text-xs text-neutral-text-dark opacity-70 mt-2 px-4">
               Tanyakan tentang program tahfizh kami
             </p>
           </div>
@@ -111,7 +109,7 @@
           >
             <div
               :class="[
-                'max-w-[85%] md:max-w-[80%] rounded-2xl px-4 py-3 break-words',
+                'max-w-[85%] rounded-2xl px-3 py-2 break-words',
                 message.role === 'user'
                   ? 'bg-primary text-white rounded-br-sm'
                   : 'bg-white text-neutral-text-dark rounded-bl-sm shadow-sm',
@@ -137,7 +135,7 @@
 
           <!-- Loading indicator -->
           <div v-if="isLoading" class="flex justify-start">
-            <div class="bg-white rounded-2xl px-4 py-3 shadow-sm">
+            <div class="bg-white rounded-2xl px-3 py-2 shadow-sm">
               <div class="flex gap-1">
                 <div
                   class="w-2 h-2 bg-primary rounded-full animate-bounce"
@@ -157,22 +155,22 @@
         </div>
 
         <!-- Input Area -->
-        <div class="p-4 bg-white border-t border-neutral-gray-light shrink-0">
+        <div class="p-3 bg-white border-t border-neutral-gray-light shrink-0">
           <form @submit.prevent="sendMessage" class="flex gap-2">
             <input
               v-model="userInput"
               type="text"
               placeholder="Ketik pesan..."
-              class="flex-1 px-4 py-3 border border-neutral-gray-light rounded-full focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-sm md:text-base min-w-0"
+              class="flex-1 px-3 py-2 text-sm border border-neutral-gray-light rounded-full focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent min-w-0"
               :disabled="isLoading"
             />
             <button
               type="submit"
               :disabled="!userInput.trim() || isLoading"
-              class="bg-primary text-white p-3 rounded-full hover:bg-primary-dark transition-colors disabled:opacity-50 disabled:cursor-not-allowed shadow-md hover:shadow-lg shrink-0"
+              class="bg-primary text-white p-2.5 rounded-full hover:bg-primary-dark transition-colors disabled:opacity-50 disabled:cursor-not-allowed shadow-md hover:shadow-lg shrink-0"
             >
               <svg
-                class="w-6 h-6"
+                class="w-5 h-5"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -193,12 +191,12 @@
     <!-- Floating Button -->
     <button
       @click="toggleChat"
-      class="w-16 h-16 bg-primary text-white rounded-full shadow-2xl hover:bg-primary-dark transition-all duration-300 flex items-center justify-center group hover:scale-110 active:scale-95"
+      class="w-14 h-14 bg-primary text-white rounded-full shadow-2xl hover:bg-primary-dark transition-all duration-300 flex items-center justify-center group hover:scale-110 active:scale-95"
       :class="{ 'rotate-0': !isOpen, 'rotate-180': isOpen }"
     >
       <svg
         v-if="!isOpen"
-        class="w-8 h-8"
+        class="w-7 h-7"
         fill="currentColor"
         viewBox="0 0 20 20"
       >
@@ -211,7 +209,7 @@
       </svg>
       <svg
         v-else
-        class="w-8 h-8"
+        class="w-7 h-7"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -227,7 +225,7 @@
       <!-- Notification Badge -->
       <span
         v-if="unreadCount > 0"
-        class="absolute -top-1 -right-1 bg-red-500 text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center"
+        class="absolute -top-1 -right-1 bg-red-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center"
       >
         {{ unreadCount }}
       </span>
@@ -341,7 +339,7 @@ watch(
 <style scoped>
 /* Custom scrollbar */
 .overflow-y-auto::-webkit-scrollbar {
-  width: 6px;
+  width: 4px;
 }
 
 .overflow-y-auto::-webkit-scrollbar-track {

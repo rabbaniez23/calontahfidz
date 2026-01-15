@@ -42,13 +42,13 @@
 
           <!-- CTA Buttons -->
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="#kelas-list"
+            <router-link
+              to="/kelas"
               class="inline-flex items-center justify-center gap-3 px-12 py-5 bg-primary text-white font-bold text-lg rounded-full hover:bg-primary-dark transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105"
             >
               <span>Lihat Semua Program</span>
-              <i class="fa-solid fa-arrow-down"></i>
-            </a>
+              <i class="fa-solid fa-arrow-right"></i>
+            </router-link>
 
             <a
               href="https://wa.me/6282117735816?text=Halo,%20saya%20ingin%20konsultasi%20tentang%20program%20tahfizh"

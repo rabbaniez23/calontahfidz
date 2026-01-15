@@ -206,7 +206,10 @@ const route = useRoute();
 const isScrolled = ref(false);
 const isMobileMenuOpen = ref(false);
 
-const navLinks = [{ to: "/", label: "Beranda" }];
+const navLinks = [
+  { to: "/", label: "Beranda" },
+  { to: "/kelas", label: "Kelas" },
+];
 
 const isActive = (path) => {
   return route.path === path;
