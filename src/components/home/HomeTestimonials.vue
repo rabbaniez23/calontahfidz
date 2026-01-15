@@ -58,9 +58,9 @@
               </div>
             </div>
             <img
-              src="./logo.jpeg"
-              alt="Google"
-              class="w-5 h-5 opacity-70"
+              src="/logo.jpeg"
+              alt="Calon Tahfiz"
+              class="w-8 h-8 rounded-full object-cover opacity-90"
             />
           </div>
 
@@ -111,9 +111,9 @@
               </div>
             </div>
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
-              alt="Google"
-              class="w-5 h-5 opacity-70"
+              src="/logo.jpeg"
+              alt="Calon Tahfiz"
+              class="w-8 h-8 rounded-full object-cover opacity-90"
             />
           </div>
 
