@@ -1,6 +1,7 @@
 <template>
   <div class="kelas-page">
    
+    <KelasHeader/>
 
     <!-- Class Cards Section -->
     <KelasList />

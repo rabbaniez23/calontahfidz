@@ -1,6 +1,7 @@
 <template>
   <div class="tentang-kami-page">
 
+    
 
     <!-- Visi & Misi Section -->
     <TentangVisiMisi />

@@ -16,7 +16,7 @@ export const images = {
   // Hero section - PLACEHOLDER: Islamic/Quran study image
   // Source: Unsplash - Islamic education
   heroBg:
-    "./logo.jpeg",
+    "./gambar2.jpg",
 
   // Alternative hero backgrounds (pick one or rotate)
   heroBgAlt1:
@@ -73,7 +73,7 @@ export const images = {
   class1:
     "./gambar1.jpg",
   class2:
-    "./gamabr2.jpg",
+    "./gambar2.jpg",
   class3:
     "./gambar3.jpg",
 };

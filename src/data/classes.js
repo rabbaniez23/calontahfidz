@@ -6,14 +6,27 @@
 export const classes = [
   {
     id: "murojaah",
-    badge: "Untuk Yang Sudah Hafal",
+    image: "./gambar1.jpg",
+    badge: "Muroja'ah",
     title: "Kelas Muroja'ah",
     price: "125K",
     period: "Bulan",
     tagline:
       "Cocok untuk kamu yang sudah mempunyai hafalan dan mau memuroja'ah hafalannya",
     description:
-      "Program intensif untuk menjaga dan mengulang hafalan yang sudah dimiliki dengan sistem private dan bimbingan personal.",
+      "Cocok untuk menjaga dan melancarkan hafalan yang sudah Anda miliki.",
+    details: [
+      {
+        icon: "fa-regular fa-calendar-check",
+        title: "20x Pertemuan",
+        subtitle: "5x sepekan",
+      },
+      {
+        icon: "fa-solid fa-book-open",
+        title: "Target 5 Lembar",
+        subtitle: "Per setoran (maksimal)",
+      },
+    ],
     features: [
       "20 kali pertemuan dalam satu bulan",
       "5 kali pertemuan dalam sepekan",
@@ -29,13 +42,26 @@ export const classes = [
   },
   {
     id: "ziyadah-intensif",
-    badge: "Paling Populer",
-    title: "Kelas Ziyadah Intensif",
+    image: "./gambar2.jpg",
+    badge: "Intensif",
+    title: "Ziyadah Intensif",
     price: "100K",
     period: "Bulan",
     tagline: "Sangat cocok untuk kamu yang punya target cepat khatam 30 juz",
     description:
-      "Program super intensif dengan target menambah hafalan secara cepat namun tetap berkualitas dengan bimbingan ustadz berpengalaman.",
+      "Program akselerasi untuk Anda yang punya target khatam cepat 30 Juz.",
+    details: [
+      {
+        icon: "fa-regular fa-calendar-check",
+        title: "20x Pertemuan",
+        subtitle: "4x Setoran + 1x Muroja'ah",
+      },
+      {
+        icon: "fa-solid fa-person-running",
+        title: "Target 2 Lembar",
+        subtitle: "Per setoran (maksimal)",
+      },
+    ],
     features: [
       "20 kali pertemuan dalam satu bulan",
       "5 kali pertemuan dalam sepekan",
@@ -52,14 +78,27 @@ export const classes = [
   },
   {
     id: "ziyadah-reguler",
-    badge: "Untuk Pemula",
-    title: "Kelas Ziyadah Reguler",
+    image: "./gambar3.jpg",
+    badge: "Reguler",
+    title: "Ziyadah Reguler",
     price: "75K",
     period: "Bulan",
     tagline:
       "Sangat cocok untuk para pemula yang baru mulai menghafalkan Al-Qur'an",
     description:
-      "Program khusus untuk pemula dengan metode pembelajaran bertahap dan tidak terlalu memberatkan, ideal untuk memulai perjalanan menghafal.",
+      "Pilihan tepat bagi pemula yang baru mulai menghafal Al-Qur'an.",
+    details: [
+      {
+        icon: "fa-regular fa-calendar-check",
+        title: "16x Pertemuan",
+        subtitle: "3x Setoran + 1x Muroja'ah",
+      },
+      {
+        icon: "fa-solid fa-leaf",
+        title: "Target 1 Lembar",
+        subtitle: "Per setoran (maksimal)",
+      },
+    ],
     features: [
       "16 kali pertemuan dalam satu bulan",
       "4 kali pertemuan dalam sepekan",

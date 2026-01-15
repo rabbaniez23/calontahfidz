@@ -12,16 +12,21 @@
             #1 Platform Tahfidz Online
           </span>
           <h1
-            class="text-5xl lg:text-5xl font-extrabold leading-tight mb-6 text-neutral-text-dark"
+            class="text-5xl lg:text-4xl font-extrabold leading-tight mb-6 text-neutral-text-dark"
           >
-            Menjadi <span class="text-primary">Hafidz Quran</span> Lebih Mudah
+            Apa itu
+            <span class="text-primary"
+              >{{ typedText }}<span class="typing-cursor">|</span></span
+            >
           </h1>
           <p
-            class="text-lg text-neutral-text-dark opacity-80 mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed"
+            class="text-md text-neutral-text-dark opacity-80 mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed"
           >
-            Wujudkan impian menghafal Al-Qur'an dengan bimbingan ustadz
-            berpengalaman, kurikulum terstruktur, dan jadwal yang fleksibel dari
-            mana saja.
+            Sebuah platform online yang memudahkan teman-teman kita di luar sana
+            untuk menghafal Al-Qur'an secara online. Melalui kelas ini kami
+            berharap bisa membantu teman-teman yang ingin menghafal Al-Qur'an
+            yang terkendala oleh tidak adanya guru dan tempat menghafal, Calon
+            Hafiz hadir untuk membantu teman-teman semua.
           </p>
           <div
             class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
@@ -92,13 +97,47 @@
 </template>
 
 <script setup>
+import { ref, onMounted } from "vue";
 import { images } from "@/data/images";
+
+const typedText = ref("");
+const fullText = "Calon Tahfidz?";
+let typeIndex = 0;
+let isDeleting = false;
+let typeSpeed = 150; // ms per character
+
+const typeEffect = () => {
+  if (!isDeleting && typeIndex <= fullText.length) {
+    // Typing
+    typedText.value = fullText.substring(0, typeIndex);
+    typeIndex++;
+    setTimeout(typeEffect, typeSpeed);
+  } else if (!isDeleting && typeIndex > fullText.length) {
+    // Pause before deleting
+    isDeleting = true;
+    setTimeout(typeEffect, 2000); // Pause 2 seconds
+  } else if (isDeleting && typeIndex > 0) {
+    // Deleting
+    typeIndex--;
+    typedText.value = fullText.substring(0, typeIndex);
+    setTimeout(typeEffect, typeSpeed / 2); // Delete faster
+  } else if (isDeleting && typeIndex === 0) {
+    // Restart
+    isDeleting = false;
+    setTimeout(typeEffect, 500); // Short pause before retyping
+  }
+};
+
+onMounted(() => {
+  setTimeout(typeEffect, 1000); // Start after 1 second
+});
 </script>
 
 <style scoped>
 .animate-bounce-slow {
   animation: bounce 3s infinite;
 }
+
 @keyframes bounce {
   0%,
   100% {
@@ -106,6 +145,26 @@ import { images } from "@/data/images";
   }
   50% {
     transform: translateY(5%);
+  }
+}
+
+/* Blinking Cursor */
+.typing-cursor {
+  display: inline-block;
+  color: var(--color-primary);
+  animation: blink 0.7s infinite;
+  font-weight: 300;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
   }
 }
 </style>
