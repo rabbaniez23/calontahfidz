@@ -4,8 +4,13 @@
     <HomeStats />
     <HomeFeatures />
     <HomeClassPreview />
+
     <HomeTestimonials />
     <HomeFAQ />
+    <!-- Class List Section with ID for scroll -->
+    <div id="kelas-list">
+      <KelasList />
+    </div>
   </div>
 </template>
 
@@ -17,6 +22,7 @@ import HomeHero from "@/components/home/HomeHero.vue";
 import HomeStats from "@/components/home/HomeStats.vue";
 import HomeFeatures from "@/components/home/HomeFeatures.vue";
 import HomeClassPreview from "@/components/home/HomeClassPreview.vue";
+import KelasList from "@/components/kelas/KelasList.vue";
 import HomeTestimonials from "@/components/home/HomeTestimonials.vue";
 import HomeFAQ from "@/components/home/HomeFAQ.vue";
 

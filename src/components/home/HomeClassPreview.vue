@@ -1,181 +1,102 @@
 <template>
-  <section id="program" class="py-16 md:py-20 relative overflow-hidden">
+  <section id="program" class="py-16 md:py-24 relative overflow-hidden">
     <!-- Background Gradient -->
     <div
       class="absolute inset-0 bg-linear-to-br from-primary/5 via-accent-gold/5 to-neutral-off-white"
     ></div>
 
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <!-- Content Grid -->
-      <div class="grid lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
-        <!-- Left Side - Copywriting -->
-        <div class="space-y-8" data-aos="fade-right">
-        
-
-          <!-- Heading -->
+      <!-- Single Column Centered Content -->
+      <div class="max-w-4xl mx-auto">
+        <!-- Copywriting Section -->
+        <div class="space-y-10 text-center" data-aos="fade-up">
+          <!-- Badge -->
           <div>
-            <h2
-              class="text-4xl md:text-5xl lg:text-4xl font-extrabold text-neutral-text-dark leading-[1.2] mb-6"
+            <span
+              class="inline-block bg-accent-gold/20 text-primary px-6 py-3 rounded-full text-sm font-semibold tracking-wide uppercase"
             >
-              Wujudkan Impian Menjadi
-              <span class="text-primary block mt-3">Penghafal Al-Qur'an</span>
+              ✨ Program Unggulan
+            </span>
+          </div>
+
+          <!-- Heading & Description -->
+          <div class="space-y-6">
+            <h2
+              class="text-5xl md:text-6xl font-extrabold text-neutral-text-dark leading-[1.1]"
+            >
+              Mulai Perjalanan
+              <span class="text-primary block mt-2">Menghafal Al-Qur'an</span>
             </h2>
 
             <p
-              class="text-base md:text-lg text-neutral-text-dark/70 leading-relaxed max-w-xl"
+              class="text-lg md:text-xl text-neutral-text-dark/75 leading-relaxed max-w-3xl mx-auto"
             >
-              Pilih program yang sesuai dengan kemampuan dan targetmu. Mulai
-              dari kelas reguler untuk pemula, intensif untuk yang ingin cepat
-              khatam, hingga muroja'ah untuk menjaga hafalan.
+              Bergabunglah dengan ribuan santri yang telah memulai perjalanan
+              menghafal mereka.
+              <span class="font-semibold text-neutral-text-dark"
+                >3 paket kelas fleksibel</span
+              >
+              untuk semua level, dari pemula hingga yang ingin khatam 30 juz.
             </p>
           </div>
 
-          <!-- Feature Items -->
-          <div class="space-y-5 pt-2">
-            <div class="flex items-start gap-4">
-              <div
-                class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary shrink-0"
-              >
-                <i class="fa-solid fa-check text-xl"></i>
-              </div>
-              <div class="flex-1 pt-1">
-                <h4 class="font-bold text-neutral-text-dark text-lg mb-1.5">
-                  Bimbingan Personal
-                </h4>
-                <p class="text-sm text-neutral-text-dark/65 leading-relaxed">
-                  Sesi one-on-one dengan ustadz berpengalaman
-                </p>
-              </div>
-            </div>
-
-            <div class="flex items-start gap-4">
-              <div
-                class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary shrink-0"
-              >
-                <i class="fa-solid fa-check text-xl"></i>
-              </div>
-              <div class="flex-1 pt-1">
-                <h4 class="font-bold text-neutral-text-dark text-lg mb-1.5">
-                  Jadwal Fleksibel
-                </h4>
-                <p class="text-sm text-neutral-text-dark/65 leading-relaxed">
-                  Sesuaikan dengan waktu dan kesibukanmu
-                </p>
-              </div>
-            </div>
-
-            <div class="flex items-start gap-4">
-              <div
-                class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary shrink-0"
-              >
-                <i class="fa-solid fa-check text-xl"></i>
-              </div>
-              <div class="flex-1 pt-1">
-                <h4 class="font-bold text-neutral-text-dark text-lg mb-1.5">
-                  Harga Terjangkau
-                </h4>
-                <p class="text-sm text-neutral-text-dark/65 leading-relaxed">
-                  Investasi terbaik untuk akhiratmu, mulai dari 75K/bulan
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- CTA Button -->
-          <div class="pt-4">
-            <router-link
-              to="/kelas"
-              class="inline-flex items-center gap-3 px-10 py-4 bg-primary text-white font-bold text-base rounded-full hover:bg-primary-dark transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+          <!-- CTA Buttons -->
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="#kelas-list"
+              class="inline-flex items-center justify-center gap-3 px-12 py-5 bg-primary text-white font-bold text-lg rounded-full hover:bg-primary-dark transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105"
             >
               <span>Lihat Semua Program</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </router-link>
+              <i class="fa-solid fa-arrow-down"></i>
+            </a>
+
+            <a
+              href="https://wa.me/6282117735816?text=Halo,%20saya%20ingin%20konsultasi%20tentang%20program%20tahfizh"
+              target="_blank"
+              class="inline-flex items-center justify-center gap-3 px-12 py-5 border-2 border-primary text-primary font-bold text-lg rounded-full hover:bg-primary hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl"
+            >
+              <i class="fa-brands fa-whatsapp text-xl"></i>
+              <span>Konsultasi Gratis</span>
+            </a>
           </div>
-        </div>
 
-        <!-- Right Side - Visual Element -->
-        <div class="relative" data-aos="fade-left" data-aos-delay="200">
-          <!-- Stats Cards -->
-          <div class="grid grid-cols-2 gap-4">
-            <!-- Card 1 -->
-            <div
-              class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-            >
-              <div
-                class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-4"
-              >
-                <i class="fa-solid fa-users text-xl"></i>
-              </div>
-              <div class="text-3xl font-bold text-primary mb-1">3</div>
-              <div class="text-sm text-neutral-text-dark/60">Paket Program</div>
-            </div>
-
-            <!-- Card 2 -->
-            <div
-              class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-            >
-              <div
-                class="w-12 h-12 rounded-xl bg-accent-gold/20 flex items-center justify-center text-neutral-text-dark mb-4"
-              >
-                <i class="fa-solid fa-book-quran text-xl"></i>
-              </div>
-              <div class="text-3xl font-bold text-primary mb-1">1-5</div>
-              <div class="text-sm text-neutral-text-dark/60">Lembar/Hari</div>
-            </div>
-
-            <!-- Card 3 - Spans 2 columns -->
-            <div
-              class="col-span-2 bg-linear-to-r from-primary to-primary-dark p-6 rounded-2xl shadow-xl text-white"
-            >
-              <div class="flex items-center justify-between">
-                <div>
-                  <div class="text-sm opacity-90 mb-2">Mulai Dari</div>
-                  <div class="text-4xl font-bold">
-                    75K<span class="text-xl">/bulan</span>
-                  </div>
+          <!-- Trust Badge -->
+          <div class="pt-6 flex items-center gap-8 justify-center flex-wrap">
+            <div class="flex items-center gap-2">
+              <div class="flex -space-x-2">
+                <div
+                  class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center text-xs font-bold border-2 border-white"
+                >
+                  <i class="fa-solid fa-user"></i>
                 </div>
                 <div
-                  class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center"
+                  class="w-10 h-10 rounded-full bg-accent-gold text-white flex items-center justify-center text-xs font-bold border-2 border-white"
                 >
-                  <i class="fa-solid fa-tag text-2xl"></i>
+                  <i class="fa-solid fa-user"></i>
+                </div>
+                <div
+                  class="w-10 h-10 rounded-full bg-primary-dark text-white flex items-center justify-center text-xs font-bold border-2 border-white"
+                >
+                  <i class="fa-solid fa-user"></i>
                 </div>
               </div>
+              <p class="text-base text-neutral-text-dark/70">
+                <span class="font-bold text-neutral-text-dark">1000+</span>
+                Santri Aktif
+              </p>
             </div>
 
-            <!-- Card 4 -->
-            <div
-              class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-            >
-              <div
-                class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-4"
+            <div class="flex items-center gap-2 text-accent-gold text-lg">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="text-base font-bold text-neutral-text-dark ml-2"
+                >4.9/5</span
               >
-                <i class="fa-solid fa-calendar-check text-xl"></i>
-              </div>
-              <div class="text-3xl font-bold text-primary mb-1">16-20x</div>
-              <div class="text-sm text-neutral-text-dark/60">Per Bulan</div>
-            </div>
-
-            <!-- Card 5 -->
-            <div
-              class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-            >
-              <div
-                class="w-12 h-12 rounded-xl bg-accent-gold/20 flex items-center justify-center text-neutral-text-dark mb-4"
-              >
-                <i class="fa-solid fa-certificate text-xl"></i>
-              </div>
-              <div class="text-3xl font-bold text-primary mb-1">✓</div>
-              <div class="text-sm text-neutral-text-dark/60">E-Sertifikat</div>
             </div>
           </div>
-
-          <!-- Decorative Elements -->
-          <div
-            class="absolute -top-4 -right-4 w-24 h-24 bg-accent-gold/20 rounded-full blur-2xl"
-          ></div>
-          <div
-            class="absolute -bottom-4 -left-4 w-32 h-32 bg-primary/20 rounded-full blur-3xl"
-          ></div>
         </div>
       </div>
     </div>
@@ -183,5 +104,5 @@
 </template>
 
 <script setup>
-// No imports needed for this simplified version
+// No imports needed
 </script>

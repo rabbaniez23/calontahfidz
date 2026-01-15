@@ -67,29 +67,6 @@
             alt="Santri Menghafal"
             class="relative rounded-3xl shadow-2xl z-10 border-8 border-white object-cover h-[450px] w-full"
           />
-
-          <!-- Floating Card -->
-          <div
-            class="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-xl z-20 flex items-center gap-4 animate-bounce-slow"
-          >
-            <div
-              class="w-12 h-12 bg-whatsapp rounded-full flex items-center justify-center text-white shadow-lg"
-            >
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                <path
-                  fill-rule="evenodd"
-                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </div>
-            <div>
-              <p class="font-bold text-lg text-neutral-text-dark">15,000+</p>
-              <p class="text-xs text-neutral-text-dark opacity-60">
-                Santri Aktif
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -134,20 +111,6 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.animate-bounce-slow {
-  animation: bounce 3s infinite;
-}
-
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(-5%);
-  }
-  50% {
-    transform: translateY(5%);
-  }
-}
-
 /* Blinking Cursor */
 .typing-cursor {
   display: inline-block;
