@@ -208,7 +208,7 @@ const isMobileMenuOpen = ref(false);
 
 const navLinks = [
   { to: "/", label: "Beranda" },
-  { to: "/kelas", label: "Kelas" },
+  { to: "/kelas", label: "Pilihan Kelas" },
 ];
 
 const isActive = (path) => {
