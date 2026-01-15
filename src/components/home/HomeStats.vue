@@ -57,7 +57,7 @@ const stats = ref([
     isFloat: false,
   },
   {
-    label: "Lulusan Tahfidz",
+    label: "Lulusan Tahfidzh",
     target: 1000,
     currentValue: 0,
     displayValue: "0",

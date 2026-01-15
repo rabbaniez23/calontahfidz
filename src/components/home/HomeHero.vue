@@ -9,7 +9,7 @@
           <span
             class="inline-block px-4 py-1.5 rounded-full bg-primary-light text-primary font-bold text-sm mb-6 shadow-sm"
           >
-            #1 Platform Tahfidz Online
+            #1 Platform Tahfidzh Online
           </span>
           <h1
             class="text-5xl lg:text-4xl font-extrabold leading-tight mb-6 text-neutral-text-dark"
@@ -26,7 +26,7 @@
             untuk menghafal Al-Qur'an secara online. Melalui kelas ini kami
             berharap bisa membantu teman-teman yang ingin menghafal Al-Qur'an
             yang terkendala oleh tidak adanya guru dan tempat menghafal, Calon
-            Tahfidz hadir untuk membantu teman-teman semua.
+            Tahfidzh hadir untuk membantu teman-teman semua.
           </p>
           <div
             class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
@@ -101,7 +101,7 @@ import { ref, onMounted } from "vue";
 import { images } from "@/data/images";
 
 const typedText = ref("");
-const fullText = "Calon Tahfidz?";
+const fullText = "Calon Hafiz?";
 let typeIndex = 0;
 let isDeleting = false;
 let typeSpeed = 150; // ms per character

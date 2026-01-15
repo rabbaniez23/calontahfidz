@@ -36,7 +36,7 @@ export const generateWhatsAppLink = (className) => {
  */
 export const getWhatsAppContactLink = () => {
   const message =
-    "Assalamualaikum, saya ingin bertanya tentang program tahfizh Calon Tahfidz Indonesia.";
+    "Assalamualaikum, saya ingin bertanya tentang program tahfizh Calon Tahfidzh Indonesia.";
   const encodedMessage = encodeURIComponent(message);
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
 };

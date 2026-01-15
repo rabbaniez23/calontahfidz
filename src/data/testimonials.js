@@ -14,7 +14,7 @@ export const testimonials = [
     class: "Kelas Ziyadah Intensif",
     rating: 5,
     testimonial:
-      "Alhamdulillah setelah 6 bulan belajar di Calon Tahfidz, saya sudah menambah hafalan 3 juz. Ustadznya sabar dan metodenya mudah dipahami. Sangat direkomendasikan untuk yang ingin serius menghafal!",
+      "Alhamdulillah setelah 6 bulan belajar di Calon Tahfidzh, saya sudah menambah hafalan 3 juz. Ustadznya sabar dan metodenya mudah dipahami. Sangat direkomendasikan untuk yang ingin serius menghafal!",
     date: "3 bulan yang lalu",
     achievement: "Hafal 3 Juz dalam 6 Bulan",
   },
@@ -38,7 +38,7 @@ export const testimonials = [
     class: "Kelas Ziyadah Reguler",
     rating: 5,
     testimonial:
-      "Sebagai pemula, saya merasa sangat terbantu dengan metode pembelajaran yang sistematis. Dari yang awalnya tidak bisa sama sekali, sekarang Alhamdulillah sudah hafal 2 juz. Terima kasih Calon Tahfidz!",
+      "Sebagai pemula, saya merasa sangat terbantu dengan metode pembelajaran yang sistematis. Dari yang awalnya tidak bisa sama sekali, sekarang Alhamdulillah sudah hafal 2 juz. Terima kasih Calon Tahfidzh!",
     date: "2 bulan yang lalu",
     achievement: "Dari NOL ke 2 Juz",
   },

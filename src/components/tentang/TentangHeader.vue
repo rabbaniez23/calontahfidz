@@ -15,7 +15,7 @@
     <div class="container mx-auto max-w-4xl relative z-10" data-aos="fade-down">
       <h1 class="text-4xl md:text-5xl font-bold mb-5">Tentang Kami</h1>
       <p class="text-lg md:text-xl opacity-95 leading-relaxed">
-        Mengenal lebih dekat visi dan tim di balik Calon Tahfidz Indonesia
+        Mengenal lebih dekat visi dan tim di balik Calon Tahfidzh Indonesia
       </p>
 
       <!-- Breadcrumb -->

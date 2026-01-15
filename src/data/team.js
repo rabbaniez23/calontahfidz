@@ -86,7 +86,7 @@ export const achievements = [
     year: "2020",
     title: "Didirikan",
     description:
-      "Yayasan Calon Tahfidz Indonesia resmi berdiri dengan visi melahirkan generasi penghafal Al-Qur'an",
+      "Yayasan Calon Tahfidzh Indonesia resmi berdiri dengan visi melahirkan generasi penghafal Al-Qur'an",
   },
   {
     year: "2021",
@@ -96,7 +96,7 @@ export const achievements = [
   },
   {
     year: "2022",
-    title: "50 Alumni Tahfidz",
+    title: "50 Alumni Tahfidzh",
     description: "Melahirkan 50 alumni yang telah menyelesaikan hafalan 30 juz",
   },
   {
