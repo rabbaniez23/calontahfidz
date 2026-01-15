@@ -1,6 +1,6 @@
 <template>
   <!-- Floating Chat Button -->
-  <div class="fixed bottom-6 left-6 z-50">
+  <div class="fixed bottom-6 left-4 md:left-6 z-50">
     <!-- Chat Widget (when open) -->
     <transition
       enter-active-class="transition duration-300 ease-out"
@@ -12,15 +12,20 @@
     >
       <div
         v-if="isOpen"
-        class="mb-4 w-[420px] h-[550px] bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden border border-neutral-gray-light"
+        class="mb-4 bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden border border-neutral-gray-light"
+        :class="[
+          'w-[calc(100vw-2rem)] max-w-[420px]',
+          'h-[calc(100vh-10rem)] max-h-[600px]',
+          'md:w-[420px] md:h-[550px]',
+        ]"
       >
         <!-- Header -->
         <div
-          class="gradient-primary text-white p-4 flex items-center justify-between"
+          class="gradient-primary text-white p-4 flex items-center justify-between shrink-0"
         >
-          <div class="flex items-center gap-3">
+          <div class="flex items-center gap-3 min-w-0">
             <div
-              class="w-10 h-10 bg-white rounded-full flex items-center justify-center"
+              class="w-10 h-10 bg-white rounded-full flex items-center justify-center shrink-0"
             >
               <svg
                 class="w-6 h-6 text-primary"
@@ -35,14 +40,18 @@
                 />
               </svg>
             </div>
-            <div>
-              <h3 class="font-bold text-lg">Chat Assistant</h3>
-              <p class="text-xs opacity-90">Tanya apapun tentang kami</p>
+            <div class="min-w-0 flex-1">
+              <h3 class="font-bold text-base md:text-lg truncate">
+                Chat Assistant
+              </h3>
+              <p class="text-xs opacity-90 truncate">
+                Tanya apapun tentang kami
+              </p>
             </div>
           </div>
           <button
             @click="toggleChat"
-            class="text-white hover:bg-white/20 rounded-full p-2 transition-colors"
+            class="text-white hover:bg-white/20 rounded-full p-2 transition-colors shrink-0"
           >
             <svg
               class="w-5 h-5"
@@ -63,7 +72,7 @@
         <!-- Messages Area -->
         <div
           ref="messagesContainer"
-          class="flex-1 overflow-y-auto p-4 space-y-4 bg-neutral-off-white"
+          class="flex-1 overflow-y-auto p-4 space-y-4 bg-neutral-off-white min-h-0"
         >
           <!-- Welcome Message -->
           <div v-if="messages.length === 0" class="text-center py-8">
@@ -85,7 +94,7 @@
             <p class="text-neutral-text-dark font-medium">
               Halo! Ada yang bisa kami bantu?
             </p>
-            <p class="text-sm text-neutral-text-dark opacity-70 mt-2">
+            <p class="text-sm text-neutral-text-dark opacity-70 mt-2 px-4">
               Tanyakan tentang program tahfizh kami
             </p>
           </div>
@@ -102,13 +111,15 @@
           >
             <div
               :class="[
-                'max-w-[80%] rounded-2xl px-4 py-3',
+                'max-w-[85%] md:max-w-[80%] rounded-2xl px-4 py-3 break-words',
                 message.role === 'user'
                   ? 'bg-primary text-white rounded-br-sm'
                   : 'bg-white text-neutral-text-dark rounded-bl-sm shadow-sm',
               ]"
             >
-              <p class="text-sm leading-relaxed whitespace-pre-wrap">
+              <p
+                class="text-sm leading-relaxed whitespace-pre-wrap break-words"
+              >
                 {{ message.content }}
               </p>
               <p
@@ -146,19 +157,19 @@
         </div>
 
         <!-- Input Area -->
-        <div class="p-4 bg-white border-t border-neutral-gray-light">
+        <div class="p-4 bg-white border-t border-neutral-gray-light shrink-0">
           <form @submit.prevent="sendMessage" class="flex gap-2">
             <input
               v-model="userInput"
               type="text"
               placeholder="Ketik pesan..."
-              class="flex-1 px-4 py-3 border border-neutral-gray-light rounded-full focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+              class="flex-1 px-4 py-3 border border-neutral-gray-light rounded-full focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-sm md:text-base min-w-0"
               :disabled="isLoading"
             />
             <button
               type="submit"
               :disabled="!userInput.trim() || isLoading"
-              class="bg-primary text-white p-3 rounded-full hover:bg-primary-dark transition-colors disabled:opacity-50 disabled:cursor-not-allowed shadow-md hover:shadow-lg"
+              class="bg-primary text-white p-3 rounded-full hover:bg-primary-dark transition-colors disabled:opacity-50 disabled:cursor-not-allowed shadow-md hover:shadow-lg shrink-0"
             >
               <svg
                 class="w-6 h-6"

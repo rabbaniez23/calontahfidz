@@ -47,7 +47,7 @@
             isScrolled ? 'text-primary' : 'text-primary-dark drop-shadow-sm'
           "
         >
-          Calon Hafidz
+          Calon Hafiz
         </span>
       </router-link>
 
