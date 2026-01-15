@@ -10,19 +10,12 @@
       <div class="grid lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
         <!-- Left Side - Copywriting -->
         <div class="space-y-8" data-aos="fade-right">
-          <!-- Badge -->
-          <div class="inline-block">
-            <span
-              class="bg-accent-gold/20 text-primary px-5 py-2.5 rounded-full text-sm font-semibold tracking-wide"
-            >
-              ✨ Program Unggulan Kami
-            </span>
-          </div>
+        
 
           <!-- Heading -->
           <div>
             <h2
-              class="text-4xl md:text-5xl lg:text-5xl font-extrabold text-neutral-text-dark leading-[1.2] mb-6"
+              class="text-4xl md:text-5xl lg:text-4xl font-extrabold text-neutral-text-dark leading-[1.2] mb-6"
             >
               Wujudkan Impian Menjadi
               <span class="text-primary block mt-3">Penghafal Al-Qur'an</span>

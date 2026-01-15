@@ -26,7 +26,7 @@
             untuk menghafal Al-Qur'an secara online. Melalui kelas ini kami
             berharap bisa membantu teman-teman yang ingin menghafal Al-Qur'an
             yang terkendala oleh tidak adanya guru dan tempat menghafal, Calon
-            Hafiz hadir untuk membantu teman-teman semua.
+            Tahfidz hadir untuk membantu teman-teman semua.
           </p>
           <div
             class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"

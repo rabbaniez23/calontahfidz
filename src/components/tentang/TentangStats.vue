@@ -18,7 +18,7 @@
         <StatsCard
           number="50"
           suffix="+"
-          label="Pengajar Hafizh"
+          label="Pengajar Tahfidz"
           icon="certificate"
           :aos-delay="100"
           :enable-count-up="true"

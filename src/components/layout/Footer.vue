@@ -20,13 +20,13 @@
             >
               <img
                 src="/logo.jpeg"
-                alt="Calon Hafiz Logo"
+                alt="Calon Tahfidz Logo"
                 class="w-full h-full object-contain p-1"
               />
             </div>
             <span
               class="text-2xl font-bold tracking-tight text-white drop-shadow-sm"
-              >Calon Hafiz</span
+              >Calon Tahfidz</span
             >
           </div>
           <p class="text-white/80 mb-8 leading-relaxed text-sm">
@@ -142,9 +142,7 @@
               >
                 <i class="fa-solid fa-location-dot"></i>
               </div>
-              <span class="leading-relaxed"
-                >bangka</span
-              >
+              <span class="leading-relaxed">bangka</span>
             </li>
             <li class="flex items-center gap-4 group">
               <div
@@ -170,7 +168,7 @@
         class="border-t-2 border-white/10 pt-8 text-center md:flex-row justify-between items-center gap-4 text-xs text-white/60"
       >
         <p class="text-center">
-          &copy; {{ currentYear }} Calon Hafiz Indonesia. All rights reserved.
+          &copy; {{ currentYear }} Calon Tahfidz Indonesia. All rights reserved.
         </p>
       </div>
     </div>

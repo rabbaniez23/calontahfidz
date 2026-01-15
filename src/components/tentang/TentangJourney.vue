@@ -3,7 +3,7 @@
     <div class="container mx-auto max-w-4xl">
       <SectionHeading
         title="Perjalanan Kami"
-        subtitle="Jejak langkah Calon Hafiz dalam membersamai umat"
+        subtitle="Jejak langkah Calon Tahfidz dalam membersamai umat"
       />
 
       <div class="relative pl-8 md:pl-0">

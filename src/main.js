@@ -16,19 +16,19 @@ const routes = [
     path: "/",
     name: "Home",
     component: HomePage,
-    meta: { title: "Beranda - Calon Hafiz Indonesia" },
+    meta: { title: "Beranda - Calon Tahfidz Indonesia" },
   },
   {
     path: "/kelas",
     name: "Kelas",
     component: KelasPage,
-    meta: { title: "Paket Kelas - Calon Hafiz Indonesia" },
+    meta: { title: "Paket Kelas - Calon Tahfidz Indonesia" },
   },
   {
     path: "/tentang-kami",
     name: "TentangKami",
     component: TentangKamiPage,
-    meta: { title: "Tentang Kami - Calon Hafiz Indonesia" },
+    meta: { title: "Tentang Kami - Calon Tahfidz Indonesia" },
   },
   {
     path: "/:pathMatch(.*)*",
@@ -50,7 +50,7 @@ const router = createRouter({
 
 // Update page title on route change
 router.afterEach((to) => {
-  document.title = to.meta.title || "Calon Hafiz Indonesia";
+  document.title = to.meta.title || "Calon Tahfidz Indonesia";
 });
 
 // Create Vue app
