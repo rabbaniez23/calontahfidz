@@ -8,7 +8,7 @@
         Apa Kata Mereka?
       </h2>
       <p class="text-neutral-text-dark opacity-70">
-        Ulasan jujur dari para santri dan orang tua santri Calon Hafiz.
+        Ulasan jujur dari para santri dan orang tua santri Calon Tahfidz.
       </p>
       <div class="flex items-center justify-center gap-2 mt-4">
         <span class="text-2xl font-bold text-neutral-text-dark">4.9</span>

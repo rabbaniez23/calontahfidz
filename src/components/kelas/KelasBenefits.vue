@@ -2,7 +2,7 @@
   <section class="benefits-section py-16 px-8 bg-neutral-white">
     <div class="container mx-auto max-w-6xl">
       <SectionHeading
-        title="Keunggulan Belajar di Calon Hafiz"
+        title="Keunggulan Belajar di Calon Tahfidz"
         subtitle="Fasilitas dan layanan terbaik untuk perjalanan tahfizh kamu"
       />
 
