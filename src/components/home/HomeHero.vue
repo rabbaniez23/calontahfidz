@@ -52,7 +52,7 @@
                   clip-rule="evenodd"
                 />
               </svg>
-              Lihat Video Profil
+              Lihat Pilihan Kelas
             </a>
           </div>
         </div>

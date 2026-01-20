@@ -71,7 +71,7 @@
             </div>
 
             <h3
-              class="text-2xl font-bold mb-4 text-neutral-text-dark group-hover:text-primary transition-colors"
+              class="text-2xl font-bold mb-4 text-neutral-text-dark group-hover:text-primary transition-colors "
             >
               Waktu Fleksibel
             </h3>
